@@ -1,0 +1,44 @@
+{
+  "name": "rrouter",
+  "version": "0.0.0",
+  "description": "React Router",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "es5-shim": "^3.3.0",
+    "eslint-jsx": "git+https://github.com/andreypopp/eslint#jsx",
+    "jest-cli": "^0.1.9",
+    "karma": "^0.12.16",
+    "karma-browserifast": "^0.6.0",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "reactify": "^0.13.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/scripts/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        {
+          "harmony": true
+        }
+      ]
+    ]
+  },
+  "author": "Andrey Popp <8mayday@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "url-pattern": "^0.6.0"
+  }
+}
