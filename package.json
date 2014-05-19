@@ -7,6 +7,8 @@
     "test": "make test"
   },
   "devDependencies": {
+    "react-tools": "http://react.zpao.com/builds/master/latest/react-tools.tgz",
+    "react": "http://react.zpao.com/builds/master/latest/react.tgz",
     "es5-shim": "^3.3.0",
     "eslint-jsx": "git+https://github.com/andreypopp/eslint#jsx",
     "jest-cli": "^0.1.9",

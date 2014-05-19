@@ -2,6 +2,9 @@ PATH := ./node_modules/.bin/:$(PATH)
 
 test: unit-test
 
+install:
+	@npm $@
+
 unit-test:
 	@jest
 
