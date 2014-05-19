@@ -24,6 +24,9 @@
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules"
+    ],
+    "modulePathIgnorePatterns": [
+      "/node_modules/"
     ]
   },
   "browserify": {
