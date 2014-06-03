@@ -2,7 +2,7 @@
   "name": "rrouter",
   "version": "0.0.0",
   "description": "React Router",
-  "main": "./lib/index.js",
+  "main": "./build/index.js",
   "bin": "./bin/rrouter",
   "dependencies": {
     "reactify": "^0.13.1",
