@@ -20,6 +20,10 @@ for(var Routing____Key in Routing){if(Routing.hasOwnProperty(Routing____Key)){Ha
     window.location.replace(href + '#' + path);
   };
 
+  HashRouting.prototype.makeHref=function(name, params) {
+    return '#' + ____SuperProtoOfRouting.makeHref.call(this,name, params);
+  };
+
   HashRouting.prototype.doStart=function() {
     window.addEventListener('hashchange', this.onChange);
   };
