@@ -4,6 +4,9 @@ TESTS = $(shell find ./lib -name '*-test.js')
 install link::
 	@npm $@
 
+build::
+	@jsx --harmony --no-cache-dir lib build && rm -rf build/**/__tests__ build/.module-cache
+
 test::
 	@mochify $(TESTS)
 
